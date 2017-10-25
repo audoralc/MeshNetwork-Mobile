@@ -34,8 +34,9 @@ export default class AddEvent extends React.Component {
           </View> 
         </View>
 
-        <View style={styles.addTagPicker}>  
-
+        <View style={{borderColor: 'red', 
+      borderWidth: 2, height: 300,}}>  
+            <H3 style={{lineHeight: 24 }}> add tags </H3>
           <View style={styles.eventTagRow}> 
               <View>
                 <Text style={styles.eventTag}> Programming </Text>
@@ -48,12 +49,13 @@ export default class AddEvent extends React.Component {
               </View>
           </View> 
 
-          <FormExample />          
+          <FormExample style={styles.addEventTagPicker} />          
         </View>
 
-        
-
-        <TextInput style={styles.addEventDes} multiline={true} numberOfLines={8}> </TextInput>
+        <View style={styles.addEventDes}>
+        <H3> add a description </H3>
+        <TextInput  multiline={true} numberOfLines={8}> </TextInput>
+        </View>
 
         <Button title='Submit'  onPress={() => Toast.show({
               text: 'Got it!', 

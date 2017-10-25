@@ -17,7 +17,7 @@ export default class FormExample extends React.Component {
         <GiftedForm openModal={(route) => {
           navigator.push(route);}} > 
   
-        <GiftedForm.SelectCountryWidget
+        <GiftedForm.SelectTagWidget
           code='alpha2'
           name='country'
           title='Country'

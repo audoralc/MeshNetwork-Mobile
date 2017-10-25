@@ -57,15 +57,18 @@ export default StyleSheet.create({
     flexDirection: 'row',   
     flexWrap: 'wrap',
     justifyContent: 'space-around',
+    borderColor: 'orange', 
+    borderWidth: 2,
+    marginBottom: 20,
+    marginTop: 25, 
   }, 
 
   eventTag: { 
     borderRadius: 10, 
-    padding: 10, 
+    padding: 5, 
     borderWidth: 1, 
     borderColor: '#000', 
     backgroundColor: '#ffbe39',
-    marginBottom: 10 
   }, 
 
   eventRegister: { 
@@ -82,12 +85,11 @@ export default StyleSheet.create({
   }, 
 
   addTagPicker: {     
-    marginTop: 10,
-    marginBottom: 20, 
+    marginTop: 10,   
     marginRight: 5, 
     marginLeft: 5,  
     borderColor: 'blue', 
-    borderWidth: 1, 
+    borderWidth: 4, 
   }, 
 
   tagPicker: {
@@ -99,31 +101,28 @@ export default StyleSheet.create({
       margin: 10, 
     }, 
 
-    addTagPicker: { 
-
+    addEventTagPicker: { 
+      margin: 20, 
     }, 
 
     addTagResults: {
-      height: 100, 
-      borderColor: 'orange', 
-      borderWidth: 1, 
- 
+      height: 100,  
     }, 
 
   addEventDes: {
     height: 200, 
-    borderColor: 'black', 
+    borderColor: 'blue', 
     borderWidth: 1, 
     marginBottom: 20, 
     marginLeft: 5, 
     marginRight: 5,
-    marginTop: 120, 
+    marginTop: 40, 
   }, 
 
   addDateTimeWrap: {
     height: 100, 
-    marginTop: 10,
-    marginBottom: 10, 
+    marginTop: 20,
+    marginBottom: 40, 
     flex: 1,     
   }, 
 
@@ -152,7 +151,7 @@ export default StyleSheet.create({
     marginBottom: 20, 
     marginLeft: 5, 
     marginRight: 5, 
-    borderBottomColor: 'black', 
+    borderBottomColor: 'blue', 
     borderBottomWidth: 1,
   }, 
 
