@@ -74,15 +74,41 @@ export default StyleSheet.create({
     marginTop: 10, 
   }, 
 
-  addTagPicker: { 
-    height: 150, 
-    borderColor: 'blue', 
-    borderWidth: 1, 
-    marginTop: 20,
+  addEventName: {
+    marginTop: 15,
+    marginBottom: 20, 
+    marginLeft: 10, 
+    marginRight: 10,  
+  }, 
+
+  addTagPicker: {     
+    marginTop: 10,
     marginBottom: 20, 
     marginRight: 5, 
     marginLeft: 5,  
+    borderColor: 'blue', 
+    borderWidth: 1, 
   }, 
+
+  tagPicker: {
+    height: 50, 
+    margin: 10, 
+  }, 
+
+    tagPickSearchBox: { 
+      margin: 10, 
+    }, 
+
+    addTagPicker: { 
+
+    }, 
+
+    addTagResults: {
+      height: 100, 
+      borderColor: 'orange', 
+      borderWidth: 1, 
+ 
+    }, 
 
   addEventDes: {
     height: 200, 
@@ -90,18 +116,35 @@ export default StyleSheet.create({
     borderWidth: 1, 
     marginBottom: 20, 
     marginLeft: 5, 
-    marginRight: 5, 
+    marginRight: 5,
+    marginTop: 120, 
   }, 
 
   addDateTimeWrap: {
-    height: 50, 
-    margin: 20, 
- 
+    height: 100, 
+    marginTop: 10,
+    marginBottom: 10, 
+    flex: 1,     
   }, 
 
+    addPickerRow: {
+      marginTop: 20, 
+      flexDirection: 'row',
+    }, 
+
   addDateTimeButton: { 
-   borderColor: 'green', 
-   borderWidth: 1, 
+    borderRadius: 2,
+    borderColor: "#DDDDDD",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 1.5,
+    elevation: 1,  
+    marginLeft: 5,
+    marginRight: 5,  
+    padding: 10, 
+    backgroundColor: '#263238',
+    color: '#ffffff', 
   }, 
 
   eventOrganizers: { 
@@ -155,4 +198,10 @@ export default StyleSheet.create({
     marginTop: 50, 
   }, 
 
+  addEventTitle: { 
+    paddingTop: 50,
+    paddingBottom: 25, 
+    backgroundColor: "#007AFF",  
+    color: "#ffffff", 
+  }, 
 }) 
