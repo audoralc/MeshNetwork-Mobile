@@ -34,8 +34,7 @@ export default class AddEvent extends React.Component {
           </View> 
         </View>
 
-        <View style={{borderColor: 'red', 
-      borderWidth: 2, height: 300,}}>  
+        <View style={{height: 300}}>  
             <H3 style={{lineHeight: 24 }}> add tags </H3>
           <View style={styles.eventTagRow}> 
               <View>
@@ -48,8 +47,11 @@ export default class AddEvent extends React.Component {
                 <Text style={styles.eventTag}> Development </Text>
               </View>
           </View> 
-
-          <FormExample style={styles.addEventTagPicker} />          
+          
+          <View style={styles.addEventTagPicker}> 
+            <FormExample  />     
+          </View>    
+           
         </View>
 
         <View style={styles.addEventDes}>
@@ -57,12 +59,14 @@ export default class AddEvent extends React.Component {
         <TextInput  multiline={true} numberOfLines={8}> </TextInput>
         </View>
 
-        <Button title='Submit'  onPress={() => Toast.show({
-              text: 'Got it!', 
-              position: 'top',
-              type: 'success',  
-              buttonText: 'OK', 
-            })}/> 
+        <View style={styles.addSubmitButton}> 
+          <Button title='Submit'  onPress={() => Toast.show({
+                text: 'Got it!', 
+                position: 'top',
+                type: 'success',  
+                buttonText: 'OK', 
+              })}/> 
+        </View>
 
       </ScrollView>
     )

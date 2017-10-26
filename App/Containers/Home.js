@@ -6,7 +6,7 @@ import { Actions as NavigationActions } from 'react-native-router-flux';
 import { Container } from 'native-base';
 
 // Styles
-import styles from './Styles/HomeStyle';
+import styles from './Home/HomeStyle';
 
 export default class Home extends React.Component {
   constructor() {
@@ -41,13 +41,15 @@ export default class Home extends React.Component {
         </View>
 
         <View style={styles.welcome}>
-          <Button title='KioskOne' onPress={NavigationActions.kioskOne} />
+          <Button title='KioskOne' onPress={NavigationActions.kioskOne}/>
           <Button title='KioskTwo' onPress={NavigationActions.kioskTwo} />
           <Button title='EventDetail' onPress={NavigationActions.eventDetail} />
           <Button title='AddEvent' onPress={NavigationActions.addEvent} />
           
           <Button title='userSearch' onPress={NavigationActions.userSearch} />
           <Button title='userProfile' onPress={NavigationActions.userProfile} />
+
+          <Button title='BookingHome' onPress={NavigationActions.bookingHome} />
         </View>
 
       </Container>

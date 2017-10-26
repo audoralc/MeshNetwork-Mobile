@@ -8,7 +8,7 @@ import styles from './KioskStyles';
 
 export default class KioskTwo extends React.Component {
   constructor(props) {
-    super(props);3
+    super(props);
   };
 
   render () {
@@ -16,44 +16,39 @@ export default class KioskTwo extends React.Component {
 
     return (
       <ScrollView style={styles.container}>
+        <View className="suggestedEvents">
+        
+          <View>      
+            <Text style={styles.kioskTwoInstruct}> Select an event to receive an email reminder</Text>        
+          </View>       
 
-       <View style={styles.suggestedEvents}>
-       
-       <View>      
-        <Text style={styles.kioskTwoInstruct}> Select an event to receive an email reminder</Text>        
-       </View>
+          <H2 style={styles.eventsTitle}> Stay Involved </H2>
 
-       
-
-       <H2 style={styles.eventsTitle}> Stay Involved </H2>
-
-        <List dataArray={items}
-          renderRow={(item) => 
+          <List dataArray={items}
+              renderRow={(item) => 
             <ListItem  style={styles.contentCard} onPress={() => Toast.show({
-              text: 'oh snap!', 
-              position: 'bottom', 
-              buttonText: 'OK', 
-            })}>
-            <View>             
-            <Body style={styles.cardBody}>             
-            <H3 style={styles.cardTitle}> {item} </H3>
-            <Text> </Text>
-            </Body>
-          </View> 
-      </ListItem>
-          }> 
+                  text: 'oh snap!', 
+                  position: 'bottom', 
+                  buttonText: 'OK', 
+                })}>                         
+                <Body style={styles.cardBody}>       
+
+                  <H3 style={styles.cardTitle}> 
+                  {item} </H3>
+
+                  <Text> </Text>
+                </Body>            
+            </ListItem>
+              }> 
           </List>   
 
           <View style={styles.exitKiosk}>         
-          <Button title="finish & exit" onPress={NavigationActions.kioskOne}></Button> 
-        </View> 
+              <Button title="finish & exit" onPress={NavigationActions.kioskOn}> </Button> 
+          </View> 
 
-       </View>
-
+        </View>
       </ScrollView>
     )
   }
 }
 
-/* card inner content 
-*/ 

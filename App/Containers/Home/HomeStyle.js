@@ -29,21 +29,9 @@ export default StyleSheet.create({
 
   welcome: {
     flex:2,
-    minHeight:Dimensions.get('window').height / 2,
-    flexDirection:'column',
-    alignItems:'center',
-    justifyContent: 'space-around', 
+    flexDirection:'row',
+    flexWrap: 'wrap', 
+    alignItems: 'baseline', 
+    justifyContent: 'space-around',
   },
-
-  welcomeText: {
-    fontSize:32,
-    fontFamily:'Lato-Regular',
-    textAlign:'center',
-  },
-
-  authorText: {
-    marginTop:15
-  }
-
-
 })

@@ -53,14 +53,11 @@ export default class EventDetail extends React.Component {
               type: 'success',  
               buttonText: 'OK', 
             })}  accessibilityLabel="Register for event"> </Button>
-          </View>       
-
-          
-
+          </View>              
 
           <View style={styles.eventOrganizers}> 
             <Text style={styles.organizerHeader}>  Organizers </Text>
-            <View style={styles.userCard}>             
+            <View className='userCard'>            
                 <Image style={styles.userAvatar} source={require('../Images/coolCat.jpg')}/>             
             </View>
 
